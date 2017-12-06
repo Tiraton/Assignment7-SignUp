@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>&uarr; Simple Sign-Up</title>
+</head>
+<body>
+	<h1>Simple Sign-Up Page</h1>
+	<div>
+		Username:
+		<input id="name" name="name" type="text" size="30" onblur="isUsernameOk(this, document.getElementById('user'))" />
+		<span id="user"></span>
+	</div>
+
+	<div>
+		Password: 
+		<input id="password" name="password" type="password" size="30" onblur="isPassworkOk(this, document.getElementById('pass'))" />
+		<span id="pass"></span>
+	</div>
+
+	<div>
+		Password Confirmation: 
+		<input id="confirm" name="confirm" type="password" size="30" onblur="isConfirmOk(this, document.getElementById('pwc'))" />
+		<span id="pwc"></span>
+	</div>
+
+	<div>
+		Email Address:
+		<input id="email" name="email" type="text" size="30" onblur="isEmailOk(this, document.getElementById('email_help'))" />
+		<span id="email_help"></span>
+	</div>
+
+	<!-- JavaScript -->
+	<script src="js/sign.js" type="text/Javascript"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+</body>
+</html>
